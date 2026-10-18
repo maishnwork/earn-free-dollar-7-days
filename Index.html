@@ -6,7 +6,7 @@
 
     <title>Earn Free Dollar - 7 Days</title>
 
-    <meta name="description" content="Discover simple and free ways to earn dollars online in 7 days.">
+    <meta name="description" content="10 simple and free ways to earn money online. Learn how each method works and get started.">
 
     <style>
         * {
@@ -18,34 +18,72 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: #ffffff;
-            color: #000000;
+            color: #111111;
             line-height: 1.6;
         }
 
         .container {
-            width: 90%;
+            width: 92%;
             max-width: 1100px;
             margin: auto;
         }
 
+        /* HEADER */
+
         header {
-            padding: 25px 0;
             border-bottom: 1px solid #eeeeee;
+            padding: 20px 0;
+            background: #ffffff;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .logo {
-            font-size: 22px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
+
+        .badge {
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid #dddddd;
+            padding: 6px 10px;
+            border-radius: 20px;
+        }
+
+        /* HERO */
 
         .hero {
             text-align: center;
-            padding: 80px 20px;
+            padding: 80px 15px 65px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            border: 1px solid #dddddd;
+            border-radius: 30px;
+            padding: 7px 13px;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
+            font-size: 48px;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 7px;
         }
 
         .hero p {
@@ -55,15 +93,26 @@
             font-size: 18px;
         }
 
+        /* SECTION */
+
         .section {
-            padding: 50px 0;
+            padding: 35px 0 70px;
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 30px;
-            margin-bottom: 35px;
+        .section-heading {
+            margin-bottom: 30px;
         }
+
+        .section-heading h2 {
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
+
+        .section-heading p {
+            color: #666666;
+        }
+
+        /* CARDS */
 
         .cards {
             display: grid;
@@ -73,43 +122,119 @@
 
         .card {
             border: 1px solid #e5e5e5;
-            border-radius: 12px;
-            padding: 25px;
+            border-radius: 16px;
+            padding: 26px;
             background: #ffffff;
+            transition: 0.2s ease;
         }
 
-        .card-number {
-            font-size: 14px;
-            font-weight: bold;
-            color: #666666;
-            margin-bottom: 8px;
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #111111;
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .number {
+            font-size: 13px;
+            font-weight: 800;
+            color: #777777;
+        }
+
+        .free {
+            font-size: 11px;
+            font-weight: 800;
+            border: 1px solid #cccccc;
+            border-radius: 20px;
+            padding: 5px 9px;
         }
 
         .card h3 {
-            font-size: 21px;
+            font-size: 22px;
             margin-bottom: 10px;
         }
 
         .card p {
             color: #555555;
+            font-size: 15px;
+            margin-bottom: 20px;
         }
 
-        footer {
-            margin-top: 50px;
-            padding: 30px 0;
-            border-top: 1px solid #eeeeee;
-            text-align: center;
-            color: #666666;
+        .learn-more {
+            display: inline-block;
+            color: #111111;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 1px solid #111111;
+            padding-bottom: 2px;
+        }
+
+        /* INFO */
+
+        .info-box {
+            margin-top: 30px;
+            border: 1px solid #e5e5e5;
+            border-radius: 16px;
+            padding: 25px;
+            background: #fafafa;
+        }
+
+        .info-box h3 {
+            margin-bottom: 8px;
+        }
+
+        .info-box p {
+            color: #555555;
             font-size: 14px;
         }
 
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #eeeeee;
+            padding: 30px 0;
+            text-align: center;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #555555;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        /* MOBILE */
+
         @media (max-width: 700px) {
+
+            .header-content {
+                gap: 10px;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            .badge {
+                font-size: 10px;
+            }
+
             .hero {
-                padding: 60px 15px;
+                padding: 60px 10px 50px;
             }
 
             .hero h1 {
-                font-size: 32px;
+                font-size: 36px;
             }
 
             .hero p {
@@ -119,130 +244,374 @@
             .cards {
                 grid-template-columns: 1fr;
             }
+
+            .section-heading h2 {
+                font-size: 26px;
+            }
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER -->
+
     <header>
-        <div class="container">
-            <div class="logo">Earn Free Dollar - 7 Days</div>
+        <div class="container header-content">
+
+            <div class="logo">
+                Earn Free Dollar
+            </div>
+
+            <div class="badge">
+                7 DAY GUIDE
+            </div>
+
         </div>
     </header>
 
-    <main>
 
-        <section class="hero">
-            <div class="container">
-                <h1>Earn Free Dollar - 7 Days</h1>
+    <!-- HERO -->
 
-                <p>
-                    Discover simple and free ways to earn money online.
-                    Start with zero investment and learn new opportunities step by step.
-                </p>
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-label">
+                100% FREE TO START
             </div>
-        </section>
 
-        <section class="section">
-            <div class="container">
+            <h1>
+                Earn Free Dollar<br>
+                in <span>7 Days</span>
+            </h1>
 
-                <h2 class="section-title">
-                    10 Free Ways to Earn
+            <p>
+                Discover simple online opportunities that can be started
+                without paying money upfront. Learn the basics and choose
+                the method that works best for you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- METHODS -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h2>
+                    10 Ways to Start
                 </h2>
 
-                <div class="cards">
+                <p>
+                    Explore our free online earning ideas.
+                </p>
 
-                    <div class="card">
-                        <div class="card-number">01</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
+            </div>
+
+
+            <div class="cards">
+
+
+                <!-- 01 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">01 / 10</span>
+                        <span class="free">FREE</span>
                     </div>
 
-                    <div class="card">
-                        <div class="card-number">02</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
-                    </div>
+                    <h3>
+                        Freelancing
+                    </h3>
 
-                    <div class="card">
-                        <div class="card-number">03</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
-                    </div>
+                    <p>
+                        Offer useful skills such as writing, graphic design,
+                        video editing, or simple online services to clients.
+                    </p>
 
-                    <div class="card">
-                        <div class="card-number">04</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-number">05</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-number">06</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-number">07</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-number">08</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-number">09</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-number">10</div>
-                        <h3>Method Coming Soon</h3>
-                        <p>
-                            We will add a genuine free earning method here.
-                        </p>
-                    </div>
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
 
                 </div>
-            </div>
-        </section>
 
-    </main>
+
+                <!-- 02 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">02 / 10</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <h3>
+                        Online Surveys
+                    </h3>
+
+                    <p>
+                        Some legitimate research platforms reward users for
+                        completing eligible surveys and sharing opinions.
+                    </p>
+
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
+
+                </div>
+
+
+                <!-- 03 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">03 / 10</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <h3>
+                        Micro Tasks
+                    </h3>
+
+                    <p>
+                        Complete small online tasks such as categorization,
+                        research, data checking, or other simple assignments.
+                    </p>
+
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
+
+                </div>
+
+
+                <!-- 04 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">04 / 10</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <h3>
+                        Content Creation
+                    </h3>
+
+                    <p>
+                        Create useful videos, posts, tutorials, or other
+                        original content and build an audience over time.
+                    </p>
+
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
+
+                </div>
+
+
+                <!-- 05 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">05 / 10</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <h3>
+                        Affiliate Marketing
+                    </h3>
+
+                    <p>
+                        Share products or services through legitimate affiliate
+                        programs and earn a commission when eligible sales occur.
+                    </p>
+
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
+
+                </div>
+
+
+                <!-- 06 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">06 / 10</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <h3>
+                        Sell Digital Skills
+                    </h3>
+
+                    <p>
+                        Turn your knowledge into useful digital services,
+                        templates, guides, or other original work.
+                    </p>
+
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
+
+                </div>
+
+
+                <!-- 07 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">07 / 10</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <h3>
+                        Tutoring Online
+                    </h3>
+
+                    <p>
+                        Help others learn subjects or skills you already
+                        understand through legitimate online platforms.
+                    </p>
+
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
+
+                </div>
+
+
+                <!-- 08 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">08 / 10</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <h3>
+                        Sell Your Designs
+                    </h3>
+
+                    <p>
+                        Create original artwork, graphics, or other designs
+                        and sell them through suitable online marketplaces.
+                    </p>
+
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
+
+                </div>
+
+
+                <!-- 09 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">09 / 10</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <h3>
+                        Website Testing
+                    </h3>
+
+                    <p>
+                        Some research services pay eligible participants for
+                        testing websites or apps and sharing useful feedback.
+                    </p>
+
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
+
+                </div>
+
+
+                <!-- 10 -->
+
+                <div class="card">
+
+                    <div class="card-top">
+                        <span class="number">10 / 10</span>
+                        <span class="free">FREE</span>
+                    </div>
+
+                    <h3>
+                        Sell Your Services
+                    </h3>
+
+                    <p>
+                        Offer simple services online based on what you can
+                        genuinely do, such as editing, research, or design.
+                    </p>
+
+                    <a href="#" class="learn-more">
+                        Learn more →
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- INFO BOX -->
+
+            <div class="info-box">
+
+                <h3>
+                    Important
+                </h3>
+
+                <p>
+                    There is no guaranteed way to earn a specific amount of
+                    money in 7 days. Earnings depend on your skills, location,
+                    available opportunities, and effort. Never pay money to
+                    someone simply because they promise guaranteed earnings.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
 
     <footer>
+
         <div class="container">
-            © 2026 Earn Free Dollar - 7 Days. All rights reserved.
+
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Disclaimer</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <p>
+                © 2026 Earn Free Dollar - 7 Days
+            </p>
+
         </div>
+
     </footer>
 
 </body>
