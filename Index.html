@@ -6,13 +6,17 @@
 
     <title>Earn Free Dollar - 7 Days</title>
 
-    <meta name="description" content="10 simple and free ways to earn money online. Learn how each method works and get started.">
+    <meta name="description" content="Discover legitimate free-to-start ways to earn money online.">
 
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -34,6 +38,9 @@
             border-bottom: 1px solid #eeeeee;
             padding: 20px 0;
             background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .header-content {
@@ -45,12 +52,11 @@
         .logo {
             font-size: 20px;
             font-weight: 800;
-            letter-spacing: -0.5px;
         }
 
         .badge {
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 11px;
+            font-weight: 700;
             border: 1px solid #dddddd;
             padding: 6px 10px;
             border-radius: 20px;
@@ -60,12 +66,12 @@
 
         .hero {
             text-align: center;
-            padding: 80px 15px 65px;
+            padding: 75px 15px 60px;
         }
 
         .hero-label {
             display: inline-block;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 700;
             border: 1px solid #dddddd;
             border-radius: 30px;
@@ -82,7 +88,6 @@
 
         .hero h1 span {
             text-decoration: underline;
-            text-decoration-thickness: 3px;
             text-underline-offset: 7px;
         }
 
@@ -96,7 +101,7 @@
         /* SECTION */
 
         .section {
-            padding: 35px 0 70px;
+            padding: 30px 0 70px;
         }
 
         .section-heading {
@@ -171,14 +176,59 @@
             font-weight: 700;
             text-decoration: none;
             border-bottom: 1px solid #111111;
-            padding-bottom: 2px;
+            cursor: pointer;
         }
 
-        /* INFO */
+        /* DETAILS */
+
+        .details {
+            display: none;
+            margin-top: 18px;
+            padding-top: 18px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .details.active {
+            display: block;
+        }
+
+        .details h4 {
+            font-size: 15px;
+            margin-top: 14px;
+            margin-bottom: 5px;
+        }
+
+        .details p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        .details ul {
+            padding-left: 20px;
+            color: #555555;
+            font-size: 14px;
+        }
+
+        .details li {
+            margin-bottom: 5px;
+        }
+
+        .close-btn {
+            margin-top: 12px;
+            border: none;
+            background: none;
+            text-decoration: underline;
+            font-weight: 700;
+            cursor: pointer;
+            color: #111111;
+        }
+
+        /* WARNING */
 
         .info-box {
             margin-top: 30px;
-            border: 1px solid #e5e5e5;
+            border: 1px solid #dddddd;
             border-radius: 16px;
             padding: 25px;
             background: #fafafa;
@@ -217,16 +267,12 @@
 
         @media (max-width: 700px) {
 
-            .header-content {
-                gap: 10px;
-            }
-
             .logo {
                 font-size: 16px;
             }
 
             .badge {
-                font-size: 10px;
+                font-size: 9px;
             }
 
             .hero {
@@ -254,365 +300,512 @@
 
 <body>
 
-    <!-- HEADER -->
+<header>
+    <div class="container header-content">
 
-    <header>
-        <div class="container header-content">
-
-            <div class="logo">
-                Earn Free Dollar
-            </div>
-
-            <div class="badge">
-                7 DAY GUIDE
-            </div>
-
+        <div class="logo">
+            Earn Free Dollar
         </div>
-    </header>
+
+        <div class="badge">
+            7 DAY GUIDE
+        </div>
+
+    </div>
+</header>
 
 
-    <!-- HERO -->
+<section class="hero">
 
-    <section class="hero">
+    <div class="container">
 
-        <div class="container">
+        <div class="hero-label">
+            FREE TO START
+        </div>
 
-            <div class="hero-label">
-                100% FREE TO START
-            </div>
+        <h1>
+            Earn Free Dollar<br>
+            in <span>7 Days</span>
+        </h1>
 
-            <h1>
-                Earn Free Dollar<br>
-                in <span>7 Days</span>
-            </h1>
+        <p>
+            Explore legitimate online opportunities that can be started
+            without paying money upfront. Learn the basics and choose
+            an option that matches your skills.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                10 Ways to Start
+            </h2>
 
             <p>
-                Discover simple online opportunities that can be started
-                without paying money upfront. Learn the basics and choose
-                the method that works best for you.
+                Tap "Learn More" to see the basic information.
             </p>
 
         </div>
 
-    </section>
+
+        <div class="cards">
 
 
-    <!-- METHODS -->
+            <!-- 01 FREELANCING -->
 
-    <section class="section">
+            <div class="card">
 
-        <div class="container">
+                <div class="card-top">
+                    <span class="number">01 / 10</span>
+                    <span class="free">FREE</span>
+                </div>
 
-            <div class="section-heading">
-
-                <h2>
-                    10 Ways to Start
-                </h2>
+                <h3>Freelancing</h3>
 
                 <p>
-                    Explore our free online earning ideas.
+                    Offer useful skills such as writing, design,
+                    editing, research, or other services to clients.
                 </p>
 
-            </div>
+                <a class="learn-more" onclick="toggleDetails('details1')">
+                    Learn More →
+                </a>
 
+                <div class="details" id="details1">
 
-            <div class="cards">
-
-
-                <!-- 01 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">01 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Freelancing
-                    </h3>
+                    <h4>How it works</h4>
 
                     <p>
-                        Offer useful skills such as writing, graphic design,
-                        video editing, or simple online services to clients.
+                        Create a profile, show examples of your work,
+                        find suitable projects, and complete the work
+                        for clients.
                     </p>
 
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
+                    <h4>What you need</h4>
 
-                </div>
+                    <ul>
+                        <li>A useful skill</li>
+                        <li>Internet connection</li>
+                        <li>Time to complete projects</li>
+                    </ul>
 
-
-                <!-- 02 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">02 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Online Surveys
-                    </h3>
+                    <h4>Important</h4>
 
                     <p>
-                        Some legitimate research platforms reward users for
-                        completing eligible surveys and sharing opinions.
+                        Never pay someone just to receive a guaranteed
+                        freelance job.
                     </p>
 
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
+                    <button class="close-btn"
+                        onclick="toggleDetails('details1')">
+                        Close
+                    </button>
 
                 </div>
-
-
-                <!-- 03 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">03 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Micro Tasks
-                    </h3>
-
-                    <p>
-                        Complete small online tasks such as categorization,
-                        research, data checking, or other simple assignments.
-                    </p>
-
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
-
-                </div>
-
-
-                <!-- 04 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">04 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Content Creation
-                    </h3>
-
-                    <p>
-                        Create useful videos, posts, tutorials, or other
-                        original content and build an audience over time.
-                    </p>
-
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
-
-                </div>
-
-
-                <!-- 05 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">05 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Affiliate Marketing
-                    </h3>
-
-                    <p>
-                        Share products or services through legitimate affiliate
-                        programs and earn a commission when eligible sales occur.
-                    </p>
-
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
-
-                </div>
-
-
-                <!-- 06 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">06 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Sell Digital Skills
-                    </h3>
-
-                    <p>
-                        Turn your knowledge into useful digital services,
-                        templates, guides, or other original work.
-                    </p>
-
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
-
-                </div>
-
-
-                <!-- 07 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">07 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Tutoring Online
-                    </h3>
-
-                    <p>
-                        Help others learn subjects or skills you already
-                        understand through legitimate online platforms.
-                    </p>
-
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
-
-                </div>
-
-
-                <!-- 08 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">08 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Sell Your Designs
-                    </h3>
-
-                    <p>
-                        Create original artwork, graphics, or other designs
-                        and sell them through suitable online marketplaces.
-                    </p>
-
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
-
-                </div>
-
-
-                <!-- 09 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">09 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Website Testing
-                    </h3>
-
-                    <p>
-                        Some research services pay eligible participants for
-                        testing websites or apps and sharing useful feedback.
-                    </p>
-
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
-
-                </div>
-
-
-                <!-- 10 -->
-
-                <div class="card">
-
-                    <div class="card-top">
-                        <span class="number">10 / 10</span>
-                        <span class="free">FREE</span>
-                    </div>
-
-                    <h3>
-                        Sell Your Services
-                    </h3>
-
-                    <p>
-                        Offer simple services online based on what you can
-                        genuinely do, such as editing, research, or design.
-                    </p>
-
-                    <a href="#" class="learn-more">
-                        Learn more →
-                    </a>
-
-                </div>
-
 
             </div>
 
 
-            <!-- INFO BOX -->
+            <!-- 02 SURVEYS -->
 
-            <div class="info-box">
+            <div class="card">
 
-                <h3>
-                    Important
-                </h3>
+                <div class="card-top">
+                    <span class="number">02 / 10</span>
+                    <span class="free">FREE</span>
+                </div>
+
+                <h3>Online Surveys</h3>
 
                 <p>
-                    There is no guaranteed way to earn a specific amount of
-                    money in 7 days. Earnings depend on your skills, location,
-                    available opportunities, and effort. Never pay money to
-                    someone simply because they promise guaranteed earnings.
+                    Some legitimate research platforms reward eligible
+                    participants for completing surveys.
                 </p>
 
+                <a class="learn-more" onclick="toggleDetails('details2')">
+                    Learn More →
+                </a>
+
+                <div class="details" id="details2">
+
+                    <h4>How it works</h4>
+
+                    <p>
+                        Research companies may ask users questions about
+                        products, services, or opinions.
+                    </p>
+
+                    <h4>What you need</h4>
+
+                    <ul>
+                        <li>Internet connection</li>
+                        <li>Accurate profile information</li>
+                        <li>Patience to find eligible surveys</li>
+                    </ul>
+
+                    <h4>Important</h4>
+
+                    <p>
+                        Availability and rewards vary by country and
+                        by participant.
+                    </p>
+
+                    <button class="close-btn"
+                        onclick="toggleDetails('details2')">
+                        Close
+                    </button>
+
+                </div>
+
             </div>
 
-        </div>
 
-    </section>
+            <!-- 03 MICRO TASKS -->
 
+            <div class="card">
 
-    <!-- FOOTER -->
+                <div class="card-top">
+                    <span class="number">03 / 10</span>
+                    <span class="free">FREE</span>
+                </div>
 
-    <footer>
+                <h3>Micro Tasks</h3>
 
-        <div class="container">
+                <p>
+                    Complete small online tasks such as research,
+                    categorization, or data checking.
+                </p>
 
-            <div class="footer-links">
-                <a href="#">About</a>
-                <a href="#">Disclaimer</a>
-                <a href="#">Contact</a>
+                <a class="learn-more" onclick="toggleDetails('details3')">
+                    Learn More →
+                </a>
+
+                <div class="details" id="details3">
+
+                    <h4>How it works</h4>
+
+                    <p>
+                        Task platforms may list small jobs that can be
+                        completed individually.
+                    </p>
+
+                    <h4>What you need</h4>
+
+                    <ul>
+                        <li>Basic computer or phone skills</li>
+                        <li>Attention to detail</li>
+                        <li>Internet connection</li>
+                    </ul>
+
+                    <h4>Important</h4>
+
+                    <p>
+                        Read the platform's rules carefully before
+                        accepting tasks.
+                    </p>
+
+                    <button class="close-btn"
+                        onclick="toggleDetails('details3')">
+                        Close
+                    </button>
+
+                </div>
+
             </div>
 
-            <p>
-                © 2026 Earn Free Dollar - 7 Days
-            </p>
 
-        </div>
+            <!-- 04 CONTENT -->
 
-    </footer>
+            <div class="card">
 
-</body>
-</html>
+                <div class="card-top">
+                    <span class="number">04 / 10</span>
+                    <span class="free">FREE</span>
+                </div>
+
+                <h3>Content Creation</h3>
+
+                <p>
+                    Create original videos, articles, tutorials,
+                    or other useful content.
+                </p>
+
+                <a class="learn-more" onclick="toggleDetails('details4')">
+                    Learn More →
+                </a>
+
+                <div class="details" id="details4">
+
+                    <h4>How it works</h4>
+
+                    <p>
+                        Build an audience by consistently publishing
+                        useful and original content.
+                    </p>
+
+                    <h4>What you need</h4>
+
+                    <ul>
+                        <li>A topic you understand</li>
+                        <li>Original content</li>
+                        <li>Consistency</li>
+                    </ul>
+
+                    <h4>Important</h4>
+
+                    <p>
+                        Monetization usually takes time and is not
+                        guaranteed within seven days.
+                    </p>
+
+                    <button class="close-btn"
+                        onclick="toggleDetails('details4')">
+                        Close
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 05 AFFILIATE -->
+
+            <div class="card">
+
+                <div class="card-top">
+                    <span class="number">05 / 10</span>
+                    <span class="free">FREE</span>
+                </div>
+
+                <h3>Affiliate Marketing</h3>
+
+                <p>
+                    Recommend products or services through legitimate
+                    affiliate programs and earn eligible commissions.
+                </p>
+
+                <a class="learn-more" onclick="toggleDetails('details5')">
+                    Learn More →
+                </a>
+
+                <div class="details" id="details5">
+
+                    <h4>How it works</h4>
+
+                    <p>
+                        You share a special tracking link. If someone
+                        makes a qualifying purchase, the program may
+                        pay you a commission.
+                    </p>
+
+                    <h4>What you need</h4>
+
+                    <ul>
+                        <li>A platform to share useful content</li>
+                        <li>Relevant audience</li>
+                        <li>Affiliate program approval</li>
+                    </ul>
+
+                    <h4>Important</h4>
+
+                    <p>
+                        Always disclose affiliate relationships and
+                        follow the program's rules.
+                    </p>
+
+                    <button class="close-btn"
+                        onclick="toggleDetails('details5')">
+                        Close
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 06 DIGITAL PRODUCTS -->
+
+            <div class="card">
+
+                <div class="card-top">
+                    <span class="number">06 / 10</span>
+                    <span class="free">FREE</span>
+                </div>
+
+                <h3>Digital Products</h3>
+
+                <p>
+                    Create original templates, guides, designs,
+                    or other useful digital products.
+                </p>
+
+                <a class="learn-more" onclick="toggleDetails('details6')">
+                    Learn More →
+                </a>
+
+                <div class="details" id="details6">
+
+                    <h4>How it works</h4>
+
+                    <p>
+                        Create something useful and original, then
+                        offer it through a suitable marketplace or
+                        your own website.
+                    </p>
+
+                    <h4>What you need</h4>
+
+                    <ul>
+                        <li>A useful idea</li>
+                        <li>Basic creation skills</li>
+                        <li>Original work</li>
+                    </ul>
+
+                    <h4>Important</h4>
+
+                    <p>
+                        Do not sell copyrighted material that you
+                        do not have permission to use.
+                    </p>
+
+                    <button class="close-btn"
+                        onclick="toggleDetails('details6')">
+                        Close
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 07 TUTORING -->
+
+            <div class="card">
+
+                <div class="card-top">
+                    <span class="number">07 / 10</span>
+                    <span class="free">FREE</span>
+                </div>
+
+                <h3>Online Tutoring</h3>
+
+                <p>
+                    Help others learn a subject or skill that
+                    you already understand.
+                </p>
+
+                <a class="learn-more" onclick="toggleDetails('details7')">
+                    Learn More →
+                </a>
+
+                <div class="details" id="details7">
+
+                    <h4>How it works</h4>
+
+                    <p>
+                        Offer lessons or educational help through
+                        suitable online platforms or directly to
+                        people you know.
+                    </p>
+
+                    <h4>What you need</h4>
+
+                    <ul>
+                        <li>Knowledge of a subject</li>
+                        <li>Communication skills</li>
+                        <li>Internet connection</li>
+                    </ul>
+
+                    <h4>Important</h4>
+
+                    <p>
+                        Only teach subjects or skills that you
+                        genuinely understand.
+                    </p>
+
+                    <button class="close-btn"
+                        onclick="toggleDetails('details7')">
+                        Close
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 08 DESIGN -->
+
+            <div class="card">
+
+                <div class="card-top">
+                    <span class="number">08 / 10</span>
+                    <span class="free">FREE</span>
+                </div>
+
+                <h3>Design Services</h3>
+
+                <p>
+                    Create original graphics, thumbnails, logos,
+                    or other visual work for clients.
+                </p>
+
+                <a class="learn-more" onclick="toggleDetails('details8')">
+                    Learn More →
+                </a>
+
+                <div class="details" id="details8">
+
+                    <h4>How it works</h4>
+
+                    <p>
+                        Build a small portfolio and offer design
+                        services to people or businesses.
+                    </p>
+
+                    <h4>What you need</h4>
+
+                    <ul>
+                        <li>Design skills</li>
+                        <li>A portfolio</li>
+                        <li>Free or paid design software</li>
+                    </ul>
+
+                    <h4>Important</h4>
+
+                    <p>
+                        Use only images, fonts, and other assets
+                        that you have permission to use.
+                    </p>
+
+                    <button class="close-btn"
+                        onclick="toggleDetails('details8')">
+                        Close
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 09 WEBSITE TESTING -->
+
+            <div class="card">
+
+                <div class="card-top">
+                    <span class="number">09 / 10</span>
+                    <span class="free">FREE</span>
+                </div>
+
+                <h3>Website Testing</h3>
+
+                <p>
+                    Some research services pay eligible users for
+                    testing websites or apps 
